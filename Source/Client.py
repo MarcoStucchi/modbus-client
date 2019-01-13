@@ -2,7 +2,7 @@ import logging
 from pymodbus.client.sync import ModbusTcpClient
 import Converter
 
-#Unit ID for Huawei Converter is 1, >= 2 for STAs
+# Unit ID for Huawei Converter is 1, >= 2 for STAs
 CONVERTER = 1
 # Set debug level
 debug_level = logging.INFO
