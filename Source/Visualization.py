@@ -1,13 +1,3 @@
-"""
-Visualization functions
------------------------
-
-This file contains specific visualization functions that can be assigned to specific parameters
-"""
-
-__author__ = "Stucchi Marco <marco.stucchi@gmail.com>"
-
-
 def OnOff(registers):
     if (registers[0] == 0):
         return "Off"
