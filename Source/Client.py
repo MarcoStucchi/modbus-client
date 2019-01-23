@@ -32,14 +32,14 @@ try:
     log.info("Getting Huawei Converter registers..")
     for reg in Converter.holding_registers:
         result = client.read_holding_registers(address=reg["address"], count=reg["nRegs"], unit=CONVERTER)
-        print reg["name"] + ": " + reg["function"](result.registers)
+        print(reg["name"] + ": " + reg["function"](result.registers))
         log.debug(result.registers)
     log.info("Getting Huawei Converter blocks..")
     ClientDecoder.register(client.framer.decoder, function=huawei_block_functions.ReadBlockRegistersResponse)
     for bl in Converter.blocks:
         request = huawei_block_functions.ReadBlockRegistersResponse(block=bl["block"], slice=0, unit=CONVERTER)
         result = client.execute(request)
-        print bl["name"] + ": " + result.data
+        print(bl["name"] + ": " + result.data)
     # Close client connection
     log.info("Closing connection..")
     client.close()
