@@ -3,7 +3,8 @@ Read Block Registers as implemented in Huawei Modbus TCP to Power Line converter
 ----------------------------------------------------------------------------------
 """
 
-__author__ = "Marco Stucchi <marco.stucchi@gmail.com>"
+__author__ = "Marco Stucchi"
+__email__ = "marco.stucchi@gmail.com"
 
 import struct
 import logging
@@ -40,7 +41,8 @@ class ReadBlockRegistersRequest(ModbusRequest):
         ModbusResponse.__init__(self, **kwargs)
         self.block = kwargs.get('block', 0)
         self.slice = kwargs.get('slice', 0)
-
+        self.address = 0
+        
     def encode(self):
         return struct.pack('>BBHH', 5, 4, self.block, self.slice)
 

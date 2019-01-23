@@ -3,7 +3,8 @@ Connects to the Huawei converter and extract information
 ---------------------------------------------------------
 """
 
-__author__ = "Marco Stucchi <marco.stucchi@gmail.com>"
+__author__ = "Marco Stucchi"
+__email__ = "marco.stucchi@gmail.com"
 
 import logging
 

@@ -3,7 +3,8 @@ Huawei Converter descriptor
 ---------------------------
 """
 
-__author__ = "Marco Stucchi <marco.stucchi@gmail.com>"
+__author__ = "Marco Stucchi"
+__email__ = "marco.stucchi@gmail.com"
 
 # Custom module
 import Visualization as Show

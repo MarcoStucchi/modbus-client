@@ -1,3 +1,6 @@
+__author__ = "Marco Stucchi"
+__email__ = "marco.stucchi@gmail.com"
+
 def OnOff(registers):
     if (registers[0] == 0):
         return "Off"
