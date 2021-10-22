@@ -41,7 +41,6 @@ class ReadBlockRegistersRequest(ModbusRequest):
         ModbusResponse.__init__(self, **kwargs)
         self.block = kwargs.get('block', 0)
         self.slice = kwargs.get('slice', 0)
-        self.address = 0
         
     def encode(self):
         return struct.pack('>BBHH', 5, 4, self.block, self.slice)

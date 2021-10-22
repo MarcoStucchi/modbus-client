@@ -1,3 +1,5 @@
+from __future__ import print_function
+
 """
 Connects to the Huawei converter and extract information
 ---------------------------------------------------------
